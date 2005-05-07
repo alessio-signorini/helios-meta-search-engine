@@ -1,0 +1,19 @@
+l </form><b>Results
++ 17
+l about
++ 6
+g FOUND
+u </b>
+l <a href=http://www.
++ 8
+g URL
+u >
++ 14
+g TITLE
+u </a>
+c
+g TEXT
+u <br><font size=-1><font color=#008000>
+c
+p
+j 6

@@ -1,0 +1,20 @@
+l <span class="bold">Showing
+l of about
++ 9
+g FOUND
+u :</span>
+l <div id="result"
+l u=http://
++ 2
+g URL
+u "
+l >
++ 1
+g TITLE
+u </a>
+c
+g TEXT
+u <span class="baseURI">
+c
+p
+j 5

@@ -1,0 +1,1 @@
+int bench(int i);

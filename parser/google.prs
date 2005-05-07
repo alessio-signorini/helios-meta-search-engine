@@ -1,0 +1,21 @@
+l Results
+l </b> of about <b>
++ 17
+g FOUND
+u </b>
+l <p class=g>
+l <a href=
++ 8
+g URL
+u >
+g TITLE
+u </a>
+c
+i 100 <font size=-1> - [
+l </font>
+l <font size=-1>
+g TEXT
+u <font color=#008000>|<a class=fl
+c
+p
+j 5

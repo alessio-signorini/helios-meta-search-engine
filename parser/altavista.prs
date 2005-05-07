@@ -1,0 +1,23 @@
+l <br class='lb'><a class='res' href='
++ 36
+g URL
+u //
+i 200 =http%3a
+j 10
+l **http%3a
++ 9
+u '>
+j 15
+l =http%3a
++ 8
+u %26
+l '>
++ 2
+g TITLE
+u </a>
+c
+g TEXT
+u <span class=ngrn>
+c
+p
+j 0

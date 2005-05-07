@@ -1,0 +1,20 @@
+l <span class="noNarrow">
+l of about
++ 8
+g FOUND
+u </span>
+l <a dragSource="dragRedirLinkCB"
+l >
++ 1
+g TITLE
+u </a>
+g TEXT
+u <span class="r-url">
+c
+l <a href="http://amznredirect.alexa.com
+l ?url=
++ 5
+g URL
+u "
+p
+j 5

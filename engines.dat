@@ -1,0 +1,256 @@
+[google]
+#host					=	www.google.com
+host					=	216.239.59.104
+port					=	80
+desidered_pages	=	1
+result_per_page	=	100
+next_page_calc		=	2
+{
+	GET /search?q=%QUERYSTR&num=%RESULTS&start=%PAGE&filter=0&as_ft=e&as_filetype=pdf HTTP/1.0
+	HOST: www.google.com
+
+}
+
+[yahoo]
+#host					=	search.yahoo.com
+host					=	66.218.71.233
+port					=	80
+desidered_pages	=	1
+result_per_page	=	100
+next_page_calc		=	3
+{
+	GET /search?vf=html&va=%QUERYSTR&n=%RESULTS&b=%PAGE HTTP/1.0
+	HOST: search.yahoo.com
+	Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+
+}
+
+[altavista]
+#host					=	www.altavista.com
+host					=	216.155.200.155
+port					=	80
+desidered_pages	=	2
+result_per_page	=	50
+next_page_calc		=	2
+{
+	GET /web/results?aqmode=s&aqa=%QUERYSTR&filetype=html&nbq=%RESULTS&stq=%PAGE HTTP/1.0
+	HOST: www.altavista.com
+	User-Agent: Opera/7.50  [en]
+
+}
+
+[looksmart]
+#host					=	search.looksmart.com
+host					=	64.241.242.201
+port					=	80
+desidered_pages	=	7
+result_per_page	=	15
+next_page_calc		=	2
+{
+	GET /p/search?qt=%QUERYSTR&tb=web&sn=%PAGE&se=0,1000&na=1 HTTP/1.0
+	HOST: search.looksmart.com
+
+}
+
+[alltheweb]
+#host					=	www.alltheweb.com
+host					=	216.155.200.155
+port					=	80
+desidered_pages	=	1
+result_per_page	=	100
+next_page_calc		=	2
+{
+	GET /search?advanced=1&cat=web&_stype=norm&type=all&q=%QUERYSTR&l=any&ics=utf-8&cs=iso88591&hits=%RESULTS&ocjp=1&o=%PAGE HTTP/1.0
+	HOST: www.alltheweb.com
+	User-Agent: Opera/7.50  [en]
+
+}
+
+[teoma]
+#host					=	s.teoma.com
+host					=	65.214.39.242
+port					=	80
+desidered_pages	=	1
+result_per_page	=	100
+next_page_calc		=	1
+{
+	GET /search?q=%QUERYSTR&u=%RESULTS&page=%PAGE HTTP/1.0
+
+}
+
+[gigablast]
+#host					=	www.gigablast.com
+host					=	64.62.168.40
+port					=	80
+desidered_pages	=	2
+result_per_page	=	50
+next_page_calc		=	2
+{
+	GET /search?s=%PAGE&q=%QUERYSTR&n=%RESULTS HTTP/1.0
+	HOST: www.gigablast.com
+	User-Agent: Opera/7.50  [en]
+	Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+
+}
+
+[about]
+#host					=	search.about.com
+host					=	207.241.148.80
+port					=	80
+desidered_pages	=	10
+result_per_page	=	10
+next_page_calc		=	1
+{
+	GET /fullsearch.htm?terms=%QUERYSTR&pg=%PAGE HTTP/1.0
+	HOST: search.about.com
+	User-Agent: Opera/7.50  [en]
+
+}
+
+[overture]
+#host					=	www.overture.com
+host					=	64.209.232.248
+port					=	80
+desidered_pages	=	1
+result_per_page	=	40
+next_page_calc		=	0
+{
+	GET /d/search/?mkt=us&lang=en_US&Keywords=%QUERYSTR&adultStatus=adult HTTP/1.0
+
+}
+
+[findwhat]
+#host					=	www.findwhat.com
+host					=	204.181.57.152
+port					=	80
+desidered_pages	=	1
+result_per_page	=	100
+next_page_calc		=	2
+{
+	GET /results.asp?DC=%RESULTS&Base=%PAGE&MT=%QUERYSTR&filter_pref=0 HTTP/1.0
+
+}
+
+[msn]
+#host					=	beta.search.msn.com
+host					=	128.255.3.14
+port					=	80
+desidered_pages	=	2
+result_per_page	=	50
+next_page_calc		=	3
+{
+	GET /results.aspx?q=%QUERYSTR&first=%PAGE&count=%RESULTS&FORM=PORE HTTP/1.0
+	HOST: beta.search.msn.com
+	Connection: close
+	Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+	Accept-Language: en-us,en;q=0.5
+	Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+	User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.5) Gecko/20041107 Firefox/1.0
+
+}
+
+[aol]
+#host					=	search.aol.com
+host					=	205.188.137.152
+port					=	80
+desidered_pages	=	7
+result_per_page	=	15
+next_page_calc		=	1
+{
+	GET /aolcom/search?query=%QUERYSTR+-filetype%3Apdf&page=%PAGE&Stage=0 HTTP/1.0
+	HOST: search.aol.com
+
+}
+
+[mozdex]
+#host					=	www.mozdex.com
+host					=	209.67.208.170
+port					=	80
+desidered_pages	=	1
+result_per_page	=	100
+next_page_calc		=	2
+{
+	GET /search.jsp?query=%QUERYSTR&start=%PAGE&hitsPerPage=%RESULTS HTTP/1.0
+	HOST: www.mozdex.com
+
+}
+
+[espotting]
+#host					=	www.espotting.com
+host					=	216.239.213.135
+port					=	80
+desidered_pages	=	1
+result_per_page	=	100
+next_page_calc		=	1
+{
+	GET /search/results.asp?keyword=%QUERYSTR&hits=%RESULTS&page=%PAGE&noadult=0 HTTP/1.0
+	HOST: www.espotting.com
+
+}
+
+[a9_web]
+#host					=	a9.com
+host					=	207.171.163.39
+port					=	80
+desidered_pages	=	10
+result_per_page	=	10
+next_page_calc		=	1
+{
+	GET /%QUERYSTR?pw=%PAGE&a=sweb HTTP/1.0
+	HOST: a9.com
+
+}
+
+[a9_book]
+#host					=	a9.com
+host					=	207.171.163.39
+port					=	80
+desidered_pages	=	10
+result_per_page	=	10
+next_page_calc		=	1
+{
+	GET /%QUERYSTR?pb=%PAGE&a=sbooks HTTP/1.0
+	HOST: a9.com
+
+}
+
+[googlenews]
+#host					=	news.google.com
+host					=	216.239.39.99
+port					=	80
+desidered_pages	=	1
+result_per_page	=	100
+next_page_calc		=	2
+{
+	GET /news?num=%RESULTS&ie=UTF-8&q=%QUERYSTR&start=%PAGE&sa=N&scoring=d HTTP/1.0
+	HOST: news.google.com
+	User-Agent: Opera/7.50  [en]
+	Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+
+}
+
+[bloglines]
+#host					=	www.bloglines.com
+host					=	216.148.212.184
+port					=	80
+desidered_pages	=	1
+result_per_page	=	100
+next_page_calc		=	2
+{
+	GET /search?t=1&r=0&q=%QUERYSTR&s=%PAGE  HTTP/1.0
+	HOST: www.bloglines.com
+
+}
+
+[idearenews]
+#host					=	news.ideare.com
+host					=	212.123.95.65
+port					=	80
+desidered_pages	=	1
+result_per_page	=	100
+next_page_calc		=	2
+{
+	GET /cgi-bin/ft-News.pl?q=%QUERYSTR&l=1023&L=it HTTP/1.0
+	HOST: news.ideare.com
+
+}

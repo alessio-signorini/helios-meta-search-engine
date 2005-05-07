@@ -1,0 +1,20 @@
+l </script><form name="frmResults"
+l <td colspan="2" class="title"><a class="title"
++ 46
+l >
++ 1
+g TITLE
+u </a>
+l <td colspan="2" class="description">
++ 37
+g TEXT
+u  </td>
+l <a class="url"
+l >
++ 1
+g URL
+w http://
+u </a>
+w /
+p
+j 1

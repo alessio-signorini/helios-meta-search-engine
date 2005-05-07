@@ -1,0 +1,23 @@
+l <!--WEBSEARCH RESULT-->
+l <font size="-1" color="#666666">
++ 32
+l b>
++ 4
+g FOUND
+u </b>
+l &nbsp;<a href="/click.jsp?DEST=
++ 31
+g URL
+u &no=
+l onMouseOut="cs()">
++ 18
+g TITLE
+u </a>
+c
+l <font size="-1">
++ 16
+g TEXT
+u <div class="g">
+c
+p
+j 7

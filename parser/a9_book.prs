@@ -1,0 +1,22 @@
+l <span class="noNarrow">
+l of about
++ 8
+g FOUND
+u </span>
+l <a dragSource="dndDragLinkCB"
+l href="
++ 6
+g URL
+u "
+l >
++ 1
+g TITLE
+u </a>
+c
+l by
++ 6
+g TEXT
+u <br>
+c
+p
+j 5

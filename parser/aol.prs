@@ -1,0 +1,22 @@
+l <span class="small_light">Page
++ 30
+l of
++ 3
+g FOUND
+u </span>
+l <li class="resultItem">
+l onmouseover="self.status='
++ 26
+g URL
+u '
+l >
+g TITLE
+u </a>
+c
+l </a>
++ 9
+g TEXT
+u <span class="small url">
+c
+p
+j 6

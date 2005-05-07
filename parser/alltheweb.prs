@@ -1,0 +1,22 @@
+l <span class="ofSoMany">
++ 23
+g FOUND
+u </span>
+l <b>Web Results</b>
+l <a class="res"
+l >
++ 1
+g TITLE
+u </a>
+c
+l <span class="resTeaser">
++ 24
+g TEXT
+u </span>
+c
+l <span class="resURL">
++ 21
+g URL
+u  
+p
+j 5

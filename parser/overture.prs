@@ -1,0 +1,16 @@
+l <ol start=1>
+l <li style="margin:0 0 8px 20px;"><b><a
+l &yargs=
++ 7
+g URL
+w http://
+u  target=_top>
+w /
+g TITLE
+u </a>
+c
+g TEXT
+u <br><em>
+c
+p
+j 1

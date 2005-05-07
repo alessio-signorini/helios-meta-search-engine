@@ -1,0 +1,16 @@
+l <table width="100%" border=0 cellspacing=0 cellpadding=0 bgcolor="#ffffff" align="center">
++ 90
+l <font face=arial size=3><b>
++ 27
+g TITLE
+u </b>
+c
+l <font face=arial size=2>
++ 24
+g TEXT
+u <br><i>
+c
+g URL
+u </i>
+p
+j 2

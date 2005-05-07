@@ -1,0 +1,59 @@
+4.1g
+		First  public  release  of  HELIOS.  Now  the parser scripts reside in the
+	directory /parser, and we applied a general cleanup of the code. Comments are
+	still need to be refined.	
+4.1f
+		Added  the  command 'q' to the parser. This command terminate the interest
+	in the server, and close the corresponing socket.
+4.1e
+		Added  STRERROR  description  after the errors alarm to help understanding
+	what's happening.
+		Modified the E->SOCKET number check. Socket 0 and 1 can be reassigned, and
+	is an error considering E->SOCKET<1 an error condition. Replaced by ==-1.
+		Added statistic on the RX time of each engine.
+		Modified the RANK index when you ask to an engine to start from page 2 for
+	example.  Before  it  started reporting RANK=1 for the first entry even if it
+	was the 100th. Now it's fixed.
+		Added  structure  PARSER  in  the  reported statistic. Now you can know if
+	there  were problems parsing one page. For each engine is reported the number
+	of requested results and the number of parsed result.
+4.1d
+		Moved  the  CLOSESOCKET  call  just  after  the  READ=0  check to make the
+	function RX	more easy to read.
+		Added the CLOSESOCKET call into the SOCKETERROR function. Before, an error
+	on a socket left the socket blocked for other uses.
+		Enabled support for 30 simultaneous search engines.
+
+4.1c
+		Added return SOCKET CHECK also in the REQUESTNEWPAGE function.
+		Added   simple  INITIAL  PARAMETERS  CHECK,  just  to  evoid  the  orrible
+	SEGMENTATION FAULT when launched without parameters.
+
+4.1b
+		Removed  not  useful  assignment  of PAGES in PRINTGRABBEDRESULT function,
+	increasing the overall speed.
+		Added  CONFIG.PARSER_PRINT  to  config   parameters. If disabled the PRINT
+	command  in  parser  scripts will not work. The command line argument "-n" is
+	used to disable that option.
+
+4.1a
+		Fixed  a bug in the CREATESOCKET function. Now if it failed, the engine is
+	set  as NON-INTERESTING and the error is reported in the new ERROR structure.
+		Added ERROR CHECKS in the RX and TX functions. If their READ or WRITE fail
+	the error is reported, and the engine is set as NON-INTERESTING.
+		Added XML structure ERROR, for engines error reporting.
+
+4.0a
+		Resolved  a bug in the SEARCH function. Closing the socket suddendly after
+	the  last  READ  caused  problems to the IF after the SELECT function. It was
+	checking  the  read  and  write  FD_SETs  also  for  closed  sockets, causing
+	unpredicible  results. I introduced two new functions that execute a check of
+	read&write interest before looking at the corresponding FD_SET.
+		Added  CONFIG.SOCKET_TRACE  to  config parameters. If enabled the software
+	will print the socket operations (close/open). The command line argument "-s"
+	is used to enable that option.
+
+3.9a
+		Socket  utilized by one-page searches were not closed, causing problems on
+	the  running  machine running-out of socket number. Now when READ=0 and there
+	aren't more page to retrive, the socket is suddendly closed.

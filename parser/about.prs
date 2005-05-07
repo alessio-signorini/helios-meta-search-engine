@@ -1,0 +1,23 @@
+l <span class="ds">Displaying results
++ 35
+l &nbsp;
++ 6
+g FOUND
+u </span>
+l <div class="res">
+l <a f=1 href="
++ 13
+g URL
+u ?
+l >
++ 1
+g TITLE
+u </a>
+c
+l <div class="txt">
++ 17
+g TEXT
+u </div>
+c
+p
+j 6
